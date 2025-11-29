@@ -42,7 +42,7 @@ const InfoCard: React.FC = () => {
                 className="ml-2 group flex items-center gap-1 hover:bg-opacity-80 bg-zinc-800/50 transition-all duration-200 px-2.5 py-1 rounded-md border border-zinc-700/50 hover:scale-105"
               >
                 <FaFilePdf className="text-sm text-white transition-colors duration-200" />
-                <span className="text-white text-xs font-medium">Resume</span>
+                <span className="text-white text-xs font-light">Resume</span>
               </a>
               <div className="hidden md:block">
                 <Available text="Available" />
