@@ -6,23 +6,23 @@ import { SiLeetcode } from "react-icons/si"
 import { MdOutlineMail } from "react-icons/md"
 import { SiBluesky } from "react-icons/si"
 
-const rinkitImage = "/assets/Images/pfps/mark.jpeg"
-const rinkitName = "Chirag Sharma"
-const rinkitShortName = "Chirag"
-const rinkitBio = "Software Engineer"
-const rinkitAbout = `
+const chiragImage = "/assets/Images/pfps/chirag.jpg"
+const chiragName = "Chirag Sharma"
+const chiragShortName = "Chirag"
+const chiragBio = "Software Engineer"
+const chiragAbout = `
   <p>
-    Hey! I'm Chirag Sharma, an undergraduate computer science student and full-stack developer who loves turning ideas into real, working products.
+    Hey! I'm Chirag Sharma, a passionate software engineer who loves building innovative solutions and turning ideas into reality.
   </p>
   <p>
-    I'm flexible working with any tech stack, though I prefer modern tools. I'm currently working with Next.js, Django, Express, and TypeScript.
+    I'm proficient in modern web technologies and enjoy working with Next.js, React, and TypeScript to create seamless user experiences.
   </p>
   <p>
     I love contributing to open-source projects and have actively participated in multiple hackathons, where I collaborate, build, and solve real-world problems.
   </p>
 `
 
-const rinkitLink = [
+const chiragLink = [
   {
     id: 1,
     name: "Github",
@@ -52,9 +52,9 @@ const rinkitLink = [
   },
 ]
 
-const rinkitContact =
-  "Most of the time, you'll find me hanging out on my Discord channel while coding. I'm also super active on X, so feel free to DM me there or reach out to me via email if you have any queries."
-const rinkitContactLink = [
+const chiragContact =
+  "I'm always open to interesting discussions and collaborations. Feel free to reach out to me via email or connect with me on social media!"
+const chiragContactLink = [
   {
     id: 1,
     name: "Twitter",
@@ -75,7 +75,7 @@ const rinkitContactLink = [
   },
 ]
 
-const rinkitFooterLink = [
+const chiragFooterLink = [
   {
     id: 1,
     name: "Mail",
@@ -116,19 +116,31 @@ const rinkitFooterLink = [
   {
     id: 6,
     name: "Bluesky",
-    link: "https://bsky.app/profile/damngruz.bsky.social",
+    link: "https://bsky.app/profile/chiragsharma.bsky.social",
     icon: SiBluesky,
   },
 ]
 
 export {
-  rinkitImage,
-  rinkitBio,
-  rinkitContact,
-  rinkitContactLink,
-  rinkitName,
-  rinkitShortName,
-  rinkitAbout,
-  rinkitLink,
-  rinkitFooterLink,
+  chiragImage,
+  chiragName,
+  chiragShortName,
+  chiragBio,
+  chiragAbout,
+  chiragLink,
+  chiragContact,
+  chiragContactLink,
+  chiragFooterLink,
+}
+
+export {
+  chiragImage as rinkitImage,
+  chiragBio as rinkitBio,
+  chiragContact as rinkitContact,
+  chiragContactLink as rinkitContactLink,
+  chiragName as rinkitName,
+  chiragShortName as rinkitShortName,
+  chiragAbout as rinkitAbout,
+  chiragLink as rinkitLink,
+  chiragFooterLink as rinkitFooterLink,
 }

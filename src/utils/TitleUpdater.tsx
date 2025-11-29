@@ -1,13 +1,22 @@
 "use client"
-import { useSwitch } from "@/components/Context/SwitchContext"
-import { useEffect } from "react"
+
+import { usePathname } from "next/navigation"
+import { rinkitName } from "@/data/ChiragData/data"
 
 export const TitleUpdater = () => {
-  const { isSwitchOn } = useSwitch()
+  const pathname = usePathname()
 
-  useEffect(() => {
-    document.title = isSwitchOn ? "Gruz" : "Chirag Sharma"
-  }, [isSwitchOn])
+  const getTitle = () => {
+    const baseTitle = rinkitName
+    if (pathname === "/") return baseTitle
+    if (pathname.startsWith("/writings")) return `Writings | ${baseTitle}`
+    if (pathname.startsWith("/lab")) return `Lab | ${baseTitle}`
+    return baseTitle
+  }
+
+  if (typeof document !== "undefined") {
+    document.title = getTitle()
+  }
 
   return null
 }

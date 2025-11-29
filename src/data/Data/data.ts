@@ -2,23 +2,23 @@ import { SiBuymeacoffee } from "react-icons/si"
 import { FaXTwitter, FaGithub, FaDiscord } from "react-icons/fa6"
 import { SiBluesky } from "react-icons/si"
 
-const gruzImage = "/assets/Images/pfps/gruz.jpeg"
-const gruzName = "Gruz"
-const gruzAbout = `
+const chiragImage = "/assets/Images/pfps/myphoto.jpeg"
+const chiragName = "Chirag Sharma"
+const chiragAbout = `
   <p>
-    Hey, I'm Gruz, a full-stack developer with OCPD. I love building things that people genuinely use and love, not just for showcases (like the typical engineer).
+    Hey, I'm Chirag Sharma, a passionate full-stack developer who loves building applications that make a real impact.
   </p>
   <p>
-    Besides programming, I'm a volleyball player who loves football. I also enjoy playing video games, mostly FIFA and Valorant in my free time.
+    When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities. I believe in continuous learning and pushing the boundaries of what's possible with code.
   </p>
   <p>
-    If you have an idea and would like to collaborate, feel free to DM me! I'm always open and ready to connect and work on exciting projects. Also, be sure to check out my other side, just click on the navbar image!
+    If you're interested in collaborating on a project or just want to connect, feel free to reach out. I'm always open to new opportunities and interesting discussions!
   </p>
 `
 
-const gruzBio = "Autistic with OCPD"
+const chiragBio = "Full-Stack Developer"
 
-const gruzLink = [
+const chiragLink = [
   {
     id: 1,
     name: "Github",
@@ -46,7 +46,7 @@ const gruzLink = [
   },
 ]
 
-const gruzFooterLink = [
+const chiragFooterLink = [
   {
     id: 1,
     name: "Github",
@@ -80,9 +80,9 @@ const gruzFooterLink = [
   },
 ]
 
-const gruzContact =
-  "Most of the time, you'll find me hanging out on my Discord channel while coding. I'm also super active on X, so feel free to DM me there!"
-const gruzContactLink = [
+const chiragContact =
+  "I'm always excited to connect with fellow developers and tech enthusiasts. Feel free to reach out for collaborations, discussions, or just to say hello!"
+const chiragContactLink = [
   {
     id: 1,
     name: "Twitter",
@@ -98,12 +98,12 @@ const gruzContactLink = [
 ]
 
 export {
-  gruzName,
-  gruzBio,
-  gruzImage,
-  gruzLink,
-  gruzFooterLink,
-  gruzAbout,
-  gruzContact,
-  gruzContactLink,
+  chiragName as gruzName,
+  chiragBio as gruzBio,
+  chiragImage as gruzImage,
+  chiragLink as gruzLink,
+  chiragFooterLink as gruzFooterLink,
+  chiragAbout as gruzAbout,
+  chiragContact as gruzContact,
+  chiragContactLink as gruzContactLink,
 }

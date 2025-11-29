@@ -9,19 +9,16 @@ import ReachOut from "../PageComponent/ReachOut"
 import Writings from "../PageComponent/Writings"
 import HireMe from "../PageComponent/HireMe"
 import AnimatedWrapper from "@/utils/AnimatedWrapper"
-import { useSwitch } from "../Context/SwitchContext"
 import Nav from "../PageComponent/Nav"
 import SupportMe from "../PageComponent/SupportMe"
 import Newsletter from "../PageComponent/Newsletter"
 // import Quote from "../PageComponent/Quote"
 
 const IndexPage = () => {
-  const { isSwitchOn } = useSwitch()
-
   return (
     <>
       <Screen>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 pt-16 md:pt-20">
           <AnimatedWrapper delay={0.15}>
             <InfoCard />
           </AnimatedWrapper>
@@ -31,13 +28,9 @@ const IndexPage = () => {
           <AnimatedWrapper delay={0.35}>
             <ReachOut />
           </AnimatedWrapper>
-          {isSwitchOn ? (
-            <></>
-          ) : (
-            <AnimatedWrapper delay={0.45}>
-              <HireMe />
-            </AnimatedWrapper>
-          )}
+          <AnimatedWrapper delay={0.45}>
+            <HireMe />
+          </AnimatedWrapper>
           <AnimatedWrapper delay={0.55}>
             <Skills />
           </AnimatedWrapper>
