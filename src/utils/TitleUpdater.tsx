@@ -1,22 +1,26 @@
 "use client"
 
 import { usePathname } from "next/navigation"
+import { useEffect } from "react"
 import { rinkitName } from "@/data/ChiragData/data"
 
 export const TitleUpdater = () => {
   const pathname = usePathname()
 
-  const getTitle = () => {
+  useEffect(() => {
     const baseTitle = rinkitName
-    if (pathname === "/") return baseTitle
-    if (pathname.startsWith("/writings")) return `Writings | ${baseTitle}`
-    if (pathname.startsWith("/lab")) return `Lab | ${baseTitle}`
-    return baseTitle
-  }
-
-  if (typeof document !== "undefined") {
-    document.title = getTitle()
-  }
+    let title = baseTitle
+    
+    if (pathname === "/") {
+      title = baseTitle
+    } else if (pathname.startsWith("/writings")) {
+      title = `Writings | ${baseTitle}`
+    } else if (pathname.startsWith("/lab")) {
+      title = `Lab | ${baseTitle}`
+    }
+    
+    document.title = title
+  }, [pathname])
 
   return null
 }

@@ -5,7 +5,7 @@ import { FiGithub } from "react-icons/fi"
 import { GoDotFill } from "react-icons/go"
 import { LuLink, LuShare } from "react-icons/lu"
 import { InfoTipProjects } from "./InfoTipProjects"
-import { AnimatePresence, motion } from "motion/react"
+import { AnimatePresence, motion } from "framer-motion"
 import Image from "next/image"
 import { toast } from "react-hot-toast"
 

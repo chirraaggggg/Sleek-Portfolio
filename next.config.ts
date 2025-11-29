@@ -1,7 +1,10 @@
 import type { NextConfig } from "next"
+const withBundleAnalyzer =
+  process.env.ANALYZE === "true"
+    ? require("@next/bundle-analyzer")({ enabled: true })
+    : (cfg: NextConfig) => cfg
 
-const nextConfig: NextConfig = {
-  /* config options here */
-}
-
-export default nextConfig
+export default withBundleAnalyzer({
+  reactStrictMode: true,
+  turbopack: {}
+})

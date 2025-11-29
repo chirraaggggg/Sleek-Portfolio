@@ -14,10 +14,15 @@ const ReachOut = () => {
         <div>
           <div className=" flex flex-wrap items-center gap-2">
             {contactLink.map((link) => (
-              <a className="btn" key={link.id} target="_blank" href={link.link}>
-                <link.icon />
-                {link.name}
-              </a>
+              <a 
+                key={link.id} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                href={link.link}
+                className="flex items-center gap-2 bg-zinc-800/50 hover:bg-zinc-800/80 transition-colors duration-200 px-3 py-1.5 rounded-md border border-zinc-700/50"
+              >
+                <link.icon className="text-lg" />
+                <span className="text-white text-sm">{link.name}</span>
             ))}
           </div>
         </div>
