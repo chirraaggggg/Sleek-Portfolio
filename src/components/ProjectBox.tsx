@@ -10,7 +10,7 @@ import Image from "next/image"
 import { toast } from "react-hot-toast"
 
 interface ProjectBoxProps {
-  img?: string
+  img?: string | null
   status: boolean
   title: string
   content: string
@@ -103,13 +103,13 @@ const ProjectBox: React.FC<ProjectBoxProps> = ({
       </AnimatePresence>
       <div className="flex md:flex-row flex-col gap-3 p-2">
         {img && (
-          <div className="basis-[22%] p-1 select-none">
+          <div className="relative w-full h-40 md:h-48 overflow-hidden rounded-t-lg">
             <Image
-              className="rounded-md md:h-[130px] h-[200px] w-full object-cover"
               src={img}
-              alt="Project Image"
-              width={200}
-              height={200}
+              alt={title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         )}
