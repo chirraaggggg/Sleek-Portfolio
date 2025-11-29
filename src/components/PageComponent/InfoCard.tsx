@@ -40,6 +40,13 @@ const InfoCard: React.FC = () => {
               </div>
             </div>
             <p className="text-zinc-400">{chiragBio}</p>
+            <p className="text-sm text-zinc-500 flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Gurgaon, India
+            </p>
             <div className="flex gap-3 mt-1">
               {chiragLink.map((link: { id: number; name: string; link: string; icon: React.ComponentType<{ className?: string }> }) => (
                 <InfoTip key={link.id} text={link.name}>
